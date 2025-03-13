@@ -113,6 +113,7 @@ public class SchoolDaoImpl implements SchoolDao {
         // You will need to include a sid in your query.  Use 123
         // YOUR CODE STARTS HERE
 
+        //added a select statement to determine what the course id was for course CS148
         String sql = "insert into course_student (student_id, course_id) " +
                 "values (123, (select cid from course where courseCode='CS148'));";
 
